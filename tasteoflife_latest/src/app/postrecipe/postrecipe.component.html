@@ -1,0 +1,70 @@
+<div id="banner">
+	<h1>TASTE OF LIFE</h1>
+</div>
+<div id="navcontainer">
+	<ul id="navlist">
+		<a [routerLink]="['/welcome/']">HOME</a>
+		<a [routerLink]="['/postrecipe/']">POST RECIPE</a>
+		<a [routerLink]="['/searchrecipe/']">SEARCH RECIPE</a>
+		<a  [routerLink] = "['/myrecipes/']">MY RECIPES</a>
+		<a [routerLink]="['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a [routerLink]="['/postjob/']">POST JOB</a>
+		<a [routerLink] = "['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+
+	</ul>
+</div>
+<div class="container">
+	<div id="postRecipe">
+		<div class="background">
+			<div class="contentdetails">
+
+
+
+<form (ngSubmit)="onSubmit()">
+	<div class="form-group">
+		<h2> Post Recipe </h2>
+                    
+
+
+
+					Recipe Name:<br>
+					<input type="text" class="form-control " placeholder="recipe name" [(ngModel)]="inputRecipeName" name ="inputRecipeName">
+					<br>
+					<br>
+					Instructions:<br>
+					<!--<input type="text" style="height: 100px;" size="95" class="form-control " placeholder="recipe name" [(ngModel)]="inputRecipeIns" name ="inputRecipeIns"> -->
+
+					<textarea rows="5" cols="100"  [(ngModel)]="inputRecipeIns" name="inputRecipeIns"></textarea>
+					<br>
+					<br>
+
+					Category:<br>
+					<select class="form-control " placeholder="category" [(ngModel)]="inputRecipeCat" name ="inputRecipeCat">
+						<option value="Entrees">Entrees</option>
+						<option value="Soups & Salads">Soups & Salads</option>
+						<option value="Burgers & Sandwiches">Burgers & Sandwiches</option>
+						<option value="Pizzas & Pastas">Pizzas & Pastas</option>
+						<option value="Cakes & Desserts">Cakes & Desserts</option>
+					</select>
+					<br>
+					<br>
+					Ingredients:<br>
+					<input type="text" class="form-control " placeholder="ingredients" [(ngModel)]="inputRecipeIng" name ="inputRecipeIng">
+					<br>
+					<br>
+					<!--<button style="height:30px;width:100px" >Post Recipe</button>-->
+					<input type="submit" class="btn btn-primary" Value="Post Recipe"/>			
+				
+	</div>
+	</form>
+
+
+			</div>
+
+				
+
+
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,17 @@
+
+<!--<table class="table" style="font-size:10pt;">
+  <tbody>
+    <tr *ngFor="let result of recipes; let i = index">
+      <td><a [routerLink]="['/recipedetails/','4']"> {{i+1}}.{{result.recipeName}}</a></td>
+      
+
+    </tr>
+  </tbody>
+</table> -->
+
+<br/>
+
+<div class="searchresult">
+ <li> <a  [routerLink] = "['/recipedetails/', recipes.recipeID]">{{recipes.recipeName}}</a> </li>
+
+</div>

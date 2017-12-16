@@ -1,0 +1,46 @@
+<div id="banner">
+		<h1>TASTE OF LIFE</h1>
+	</div>
+	<div id="navcontainer">
+		<ul id="navlist">
+		<a  [routerLink] = "['/welcome/']">HOME</a>
+		<a  [routerLink] = "['/postrecipe/']">POST RECIPE</a>
+		<a  [routerLink] = "['/searchrecipe/']">SEARCH RECIPE</a>
+		<a  [routerLink] = "['/myrecipes/']">MY RECIPES</a>
+		<a  [routerLink] = "['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a  [routerLink] = "['/postjob/']">POST JOB</a>
+		<a  [routerLink] = "['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+			
+		</ul>
+	</div>
+
+  <div class="container">
+		<div id="postRecipe">
+			<div class="background">
+<div class="contentdetails">
+				<form (ngSubmit)="onSubmit()">
+				<div class="form-group-job">
+					<h2> Post Job </h2>
+					Job Name:<br>
+					<input type="text" class="form-control " placeholder="job name" [(ngModel)]="inputJobName" name="inputJobName">
+          <br>
+					<br>
+					<br>Restaurant Name:<br>
+					<input type="text" class="form-control " placeholder="restaurant name" [(ngModel)]="inputRestaurantName" name="inputRestaurantName">
+					<br>					
+          <br>
+          <br> Job Description:
+					<br>
+					<!--<input type="textarea" name="instructions" style="height: 100px;" size="95">-->
+          <textarea placeholder="Enter job description!" class="form-control " placeholder="job description" [(ngModel)]="inputJobDescription" name="inputJobDescription" rows="4" cols="100"></textarea>
+					<br>
+          <br>
+					<input type="submit" class="btn btn-primary" Value="Post Job"/>
+
+				</div>
+				</form>
+</div>
+				</div>
+			</div>
+  </div>

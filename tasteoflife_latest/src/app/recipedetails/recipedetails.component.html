@@ -1,0 +1,29 @@
+<div id="banner">
+		<h1>TASTE OF LIFE</h1>
+	</div>
+	<div id="navcontainer">
+		<ul id="navlist">
+		<a  [routerLink] = "['/welcome/']">HOME</a>
+		<a  [routerLink] = "['/postrecipe/']">POST RECIPE</a>
+		<a  [routerLink] = "['/searchrecipe/']">SEARCH RECIPE</a>
+		<a  [routerLink] = "['/myrecipes/']">MY RECIPES</a>
+		<a  [routerLink] = "['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a  [routerLink] = "['/postjob/']">POST JOB</a>
+		<a  [routerLink] = "['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+			
+		</ul>
+	</div>
+<div class="background">
+  <div class="container">
+
+<div class="recipeDetails">
+  <p>Recipe ID: {{recipeID}} </p>
+  <p>Recipe Name: {{recipeName}} </p>
+  <p>Recipe Owner: {{recipeOwner}} </p>
+  <p>Recipe Category: {{category}} </p>
+  <p>Recipe Ingredients: {{ingredients}} </p>
+  <p>Recipe Instructions: {{instructions}} </p>
+</div>
+  </div>
+</div>

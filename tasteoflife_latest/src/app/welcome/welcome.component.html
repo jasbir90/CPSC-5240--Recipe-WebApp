@@ -1,0 +1,50 @@
+<div>
+	<div id="banner">
+		<h1>TASTE OF LIFE</h1>
+	</div>
+	<div id="navcontainer">
+		<ul id="navlist">
+		<a  [routerLink] = "['/welcome/']">HOME</a>
+		<a  [routerLink] = "['/postrecipe/']">POST RECIPE</a>
+		<a  [routerLink] = "['/searchrecipe/']">SEARCH RECIPE</a>
+		<a  [routerLink] = "['/myrecipes/']">MY RECIPES</a>
+		<a  [routerLink] = "['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a  [routerLink] = "['/postjob/']">POST JOB</a>
+		<a  [routerLink] = "['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+		<select>
+			<option>{{username}}</option>
+		</select>
+		</ul>
+	</div>
+	<div id="home">
+		<div class="background">
+			<div class="container">
+				<div class="recipes">
+					<ul>
+						<li>
+							<a>
+								<u>Categories</u>
+							</a>
+						</li>
+						<li><a  [routerLink] = "['/recipecategory/', 'Entrees']">Entrees</a></li>
+						<li><a  [routerLink] = "['/recipecategory/', 'Pizzas & Pastas']">Pizzas & Pastas</a></li>
+						<li><a  [routerLink] = "['/recipecategory/', 'Soups & Salads']">Soups & Salads</a></li>
+						<li><a  [routerLink] = "['/recipecategory/', 'Burgers & Sandwiches']">Burgers & Sandwiches</a></li>
+						<li><a  [routerLink] = "['/recipecategory/', 'Cakes & Desserts']">Cakes & Desserts</a></li>
+					
+						
+
+					</ul>
+				</div>
+				<div class="sidebar" align="justified">
+					<h2>
+						<u>Week's Best Recipe</u>
+					</h2>
+					<img src="http://global-cdn.skinnyms.com/wp-content/uploads/2015/04/Baked-Vegetable-Spring-Rolls-750x500.jpg" style="width:250px;height:200px"/>
+					<p>Veggie Spring Roll</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

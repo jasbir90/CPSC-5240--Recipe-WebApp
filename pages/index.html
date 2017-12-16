@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Healthy N Wealthy</title>
+</head>
+	</head>
+<body onload="initXHR('home', null)">
+	<div id="banner">
+		<h1>TASTE OF LIFE</h1>
+	</div>
+	<div id="navcontainer">
+		<ul id="navlist">
+			<li><a class="navbar-brand" href="javascript:initXHR('home', null)">HOME</a></li>
+			<li><a class="navbar-brand" href="javascript:initXHR('postRecipe', null)">POST RECIPE</a></li>
+			<li><a class="navbar-brand" href="javascript:initXHR('search', null)">SEARCH RECIPE</a></li>
+			<li><a class="navbar-brand" href="javascript:initXHR('upgrade', null)">UPGRADE ACCOUNT</a></li>
+		</ul>
+	</div>
+	<div id="home">
+		<div class="background">
+			<div class="container">
+				<div class="recipes">
+					<ul>
+						<li><u>Categories</u></a></li>
+						<li><a href="javascript:initXHR('recipeCategory', 'Entrees')">Entrees</a></li>
+						<li><a href="javascript:initXHR('recipeCategory', 'Soups & Salads')">Soups & Salads</a></li>
+						<li><a href="javascript:initXHR('recipeCategory', 'Burgers & Sandwiches')">Burgers & Sandwiches</a></li>
+						<li><a href="javascript:initXHR('recipeCategory', 'Pizzas & Pastas')">Pizzas & Pastas</a></li>
+						<li><a href="javascript:initXHR('recipeCategory', 'Cakes & Desserts')">Cakes & Desserts</a></li>
+
+					</ul>
+				</div>
+				<div class="sidebar" align="justified">
+					<h2><u>Week's Best Recipe</u></h2>
+					<img src="images/image2.jpeg">
+					<p>Veggie Spring Roll</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="postRecipe">
+			<div class="background">
+				<div class="recipes">
+					<h2> Post Recipe </h2>
+
+					<text>Recipe Name:</text><br>
+					<input type="text" name="recipename">
+					<br>
+					<br>
+					<text>Instructions:</text><br>
+					<input type="text" name="instructions" style="height: 100px;" size="95">
+
+					<!-- <textarea rows="4" cols="50" name="comment" placeholder="instruction"></textarea> -->
+					<br>
+					<br>
+
+					<text>Category:</text><br>
+					<select name="Category">
+						<option value="Entrees">Entrees</option>
+						<option value="Soups & Salads">Soups & Salads</option>
+						<option value="Burgers & Sandwiches">Burgers & Sandwiches</option>
+						<option value="Pizzas & Pastas">Pizzas & Pastas</option>
+						<option value="Cakes & Desserts">Cakes & Desserts</option>
+					</select>
+					<br>
+					<br>
+					<text>Ingredients:</text><br>
+					<input type="text" name="ingredient">
+					<br>
+					<br>
+					<button style="height:30px;width:100px">Post Recipe</button>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="search">
+			<div class="background">
+				<div class="recipes">
+					<select>
+						<option value="ingredients">Search by ingredients</option>
+						<option value="owner">Search by owner</option>
+						<option value="calories">Search by calories</option>
+						<option value="rating">Search by rating</option>
+					</select>
+					<br />
+					<br /><input type="text" name="searchby" placeholder="Search by"><br />
+					<br /><input type="submit" value="Submit">
+				</div>
+			</div>
+		</div>
+
+		<div id="upgrade">
+			<div class="background">
+				<div class="recipes">
+					<h1>Upgrade Account</h1>
+					<h3>$9.99 + tax per year</h3><br>
+					<text>User Name:</text> <input type="text" name="username"><br><br>
+					<text>Card Number:</text> <input type="text" name="cardnumber"><br><br>
+					<text>Expire Date:</text> <input type="date" name="expiredate"><br><br>
+					<text>Security Code:</text> <input type="text" name="securitycode"><br><br>
+					<text>Zip Code:</text> <input type="text" name="zipcode"><br><br>
+					<button style="height:30px;width:100px">Pay</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="recipes" style="display:none;">
+
+		</div>
+		<div id="recipeCategory" style="display:none;">
+		</div>
+
+		<div id="recipeDetails" style="display:none;">
+
+		</div>
+
+
+	</div> <!-- /container -->
+
+
+	<script src="/script.js"></script>
+</body>
+</html>

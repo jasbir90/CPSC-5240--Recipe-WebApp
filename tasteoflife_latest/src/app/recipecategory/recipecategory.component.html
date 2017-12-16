@@ -1,0 +1,37 @@
+<!-- <p>
+
+  <button (click)="onClick()" class="btn btn-default" type="button">Back to home</button>
+  <div>
+			<div *ngFor="let result of recipeList; let i = index">
+				<!-- Default panel contents 
+
+				<recipetable [post]="result" [index]="i"></recipetable>
+				Table 
+			</div>
+
+</p>-->
+
+<div id="banner">
+		<h1>TASTE OF LIFE</h1>
+	</div>
+	<div id="navcontainer">
+		<ul id="navlist">
+		<a  [routerLink] = "['/welcome/']">HOME</a>
+		<a  [routerLink] = "['/postrecipe/']">POST RECIPE</a>
+		<a  [routerLink] = "['/searchrecipe/']">SEARCH RECIPE</a>
+		<a  [routerLink] = "['/myrecipes/']">MY RECIPES</a>
+		<a  [routerLink] = "['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a  [routerLink] = "['/postjob/']">POST JOB</a>
+		<a  [routerLink] = "['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+			
+		</ul>
+	</div>
+
+<div class="background">
+  
+    <div class="recipeCategory" *ngFor="let result of recipeList; let i = index">
+				
+				<recipetable [recipes]="result" [index]="i"></recipetable>
+	 </div>
+  </div>

@@ -1,0 +1,41 @@
+<div id="banner">
+	<h1>TASTE OF LIFE</h1>
+</div>
+<div id="navcontainer">
+	<ul id="navlist">
+		<a [routerLink]="['/welcome/']">HOME</a>
+		<a [routerLink]="['/postrecipe/']">POST RECIPE</a>
+		<a [routerLink]="['/searchrecipe/']">SEARCH RECIPE</a>
+		<a [routerLink]="['/myrecipes/']">MY RECIPES</a>
+		<a [routerLink]="['/upgradeaccount/']">UPGRADE ACCOUNT</a>
+		<a [routerLink]="['/postjob/']">POST JOB</a>
+		<a [routerLink]="['/postedjoblist/']">VIEW JOBS</a>
+		<a  [routerLink] = "['/myprofile/']">MY PROFILE</a>
+
+	</ul>
+</div>
+<div>
+	<div id="search">
+		<div class="background">
+			<div class="recipes">
+				<form (ngSubmit)="onSubmit()">
+					<div class="form-group">
+						<select>
+						<option value="owner">Search by owner</option>
+						<option value="ingredients">Search by ingredients</option>
+						<option value="calories">Search by calories</option>
+						<option value="rating">Search by rating</option>
+					</select>
+						<br />
+						<br /><input type="text" name="searchby" placeholder="Search by" [(ngModel)]="ing" name="ing"><br />
+						<br /><input type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+			<div class="searchresult">
+			<div *ngFor="let result of recipeList; let i = index">
+				<recipetable [recipes]="result" [index]="i"></recipetable>
+			</div>
+			</div>
+		</div>
+</div>
